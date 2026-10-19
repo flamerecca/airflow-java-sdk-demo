@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Airflow 執行期產物, 含密碼與金鑰
+airflow.cfg
+airflow.db*
+logs/
+simple_auth_manager_passwords.json.generated
+webserver_config.py
+standalone_admin_password.txt
+
+# 環境變數與憑證
+.env
+.env.*
+*.pem
+*.key
+
+# IDE
+.idea/
+.vscode/
+.DS_Store

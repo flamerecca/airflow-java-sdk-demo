@@ -21,3 +21,8 @@ standalone_admin_password.txt
 .idea/
 .vscode/
 .DS_Store
+
+# Java / Gradle
+java-tasks/build/
+java-tasks/.gradle/
+java-tasks/.kotlin/

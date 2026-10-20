@@ -26,3 +26,6 @@ standalone_admin_password.txt
 java-tasks/build/
 java-tasks/.gradle/
 java-tasks/.kotlin/
+
+# 由 StubGenerator 自動產生的 Python stub
+dags/generated/

@@ -12,4 +12,11 @@ class KotlinExample {
     @Builder.Task(id = "transform")
     fun transform(client: Client, @Builder.XCom(task = "extract") extracted: String): String =
         "Hello from Kotlin, ${extracted.uppercase()}!"
+
+    @Builder.Task(id = "load")
+    fun load(client: Client, @Builder.XCom(task = "transform") transformed: String): String {
+        val message = "Kotlin 回傳訊息: $transformed"
+        println(message)
+        return message
+    }
 }
